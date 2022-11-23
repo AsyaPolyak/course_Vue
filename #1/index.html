@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+
+    <div id="app">
+        <span v-on:click="title='Text'">Text</span>
+        <span @click="title='Text'">Text</span>
+        <span @mouseover="changeText">Text</span>
+        <p>{{ title }}</p>
+        <p>Цвет:{{ styleCSS }}</p>
+        <input type="text" v-on:input="styleCSS =$event.target.value">
+    </div>
+    <script src="script/main.js"></script>
+</body>
+</html>
