@@ -12,7 +12,7 @@
     <div id="app">
         <div class="grid">
             <input type="text" v-model="result" placeholder="0">
-            <button></button>
+            <button class="cell num" v-for="num in numbers">{{num}}</button>
         </div>
     </div>
     <script src="script.js"></script>
