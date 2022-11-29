@@ -6,14 +6,15 @@
         operations:['+','-','*','/']
     },
     methods:{
-        input:function(){
-
+        input:function(char){
+            
+            this.result+=char; 
         },
         reset: function(){
-
+            this.result='';
         },
         calc: function(){
-            
+            this.result= eval(this.result);
         }
     }
  });
